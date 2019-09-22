@@ -2,7 +2,7 @@ package com.uet.procon.common.model;
 
 import java.io.Serializable;
 
-public class ActionModel implements Serializable {
+public class RequestActionModel implements Serializable {
 
     private int agentID;
 
@@ -11,10 +11,6 @@ public class ActionModel implements Serializable {
     private int dx;
 
     private int dy;
-
-    private int turn;
-
-    private int apply;
 
     public int getAgentID() {
         return agentID;
@@ -32,14 +28,6 @@ public class ActionModel implements Serializable {
         this.type = type;
     }
 
-    public int getTurn() {
-        return turn;
-    }
-
-    public void setTurn(int turn) {
-        this.turn = turn;
-    }
-
     public int getDx() {
         return dx;
     }
@@ -54,13 +42,5 @@ public class ActionModel implements Serializable {
 
     public void setDy(int dy) {
         this.dy = dy;
-    }
-
-    public int getApply() {
-        return apply;
-    }
-
-    public void setApply(int apply) {
-        this.apply = apply;
     }
 }

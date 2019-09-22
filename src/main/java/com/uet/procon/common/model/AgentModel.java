@@ -1,6 +1,8 @@
 package com.uet.procon.common.model;
 
-public class AgentModel {
+import java.io.Serializable;
+
+public class AgentModel implements Serializable {
 
     private int agentID;
 

@@ -1,6 +1,6 @@
 package com.uet.procon.worker.service;
 
-import com.uet.procon.common.entity.MapImpl;
+import com.uet.procon.common.model.MapModel;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -12,7 +12,7 @@ public class ScoringService {
     private final int[] dX = {0, 0, -1, 1};
     private final int[] dY = {-1, 1, 0, 0};
 
-    private MapImpl map;
+    private MapModel map;
 
     private List<List<Boolean>> isMark = new ArrayList<>();
 
@@ -20,7 +20,7 @@ public class ScoringService {
 
     private boolean isReachBoundary;
 
-    public void setMap(MapImpl map) {
+    public void setMap(MapModel map) {
         this.map = map;
     }
 

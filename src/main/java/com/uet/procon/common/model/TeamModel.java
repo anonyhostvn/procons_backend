@@ -1,8 +1,9 @@
 package com.uet.procon.common.model;
 
+import java.io.Serializable;
 import java.util.List;
 
-public class TeamModel {
+public class TeamModel implements Serializable {
 
     private int teamID;
 

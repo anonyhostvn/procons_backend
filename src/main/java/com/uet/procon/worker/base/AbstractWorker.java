@@ -2,7 +2,9 @@ package com.uet.procon.worker.base;
 
 import com.uet.procon.common.util.LoggingUtil;
 import org.slf4j.Logger;
+import org.springframework.stereotype.Component;
 
+@Component
 public abstract class AbstractWorker implements BaseWorker {
 
     private Logger logger = LoggingUtil.createLogger(AbstractWorker.class);

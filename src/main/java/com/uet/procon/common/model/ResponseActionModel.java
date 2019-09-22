@@ -1,8 +1,6 @@
 package com.uet.procon.common.model;
 
-import java.io.Serializable;
-
-public class ActionModel implements Serializable {
+public class ResponseActionModel {
 
     private int agentID;
 
@@ -13,8 +11,6 @@ public class ActionModel implements Serializable {
     private int dy;
 
     private int turn;
-
-    private int apply;
 
     public int getAgentID() {
         return agentID;
@@ -30,14 +26,6 @@ public class ActionModel implements Serializable {
 
     public void setType(String type) {
         this.type = type;
-    }
-
-    public int getTurn() {
-        return turn;
-    }
-
-    public void setTurn(int turn) {
-        this.turn = turn;
     }
 
     public int getDx() {
@@ -56,11 +44,11 @@ public class ActionModel implements Serializable {
         this.dy = dy;
     }
 
-    public int getApply() {
-        return apply;
+    public int getTurn() {
+        return turn;
     }
 
-    public void setApply(int apply) {
-        this.apply = apply;
+    public void setTurn(int turn) {
+        this.turn = turn;
     }
 }
